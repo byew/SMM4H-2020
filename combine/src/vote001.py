@@ -5,7 +5,7 @@ import numpy as np
 import os
 from pprint import pprint
 
-DATA_DIR = '../data_8223/'
+DATA_DIR = '../data_wei/'
 files = os.listdir(DATA_DIR)
 files = [i for i in files if i[0]!='.']
 print(len(files))
