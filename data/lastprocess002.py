@@ -1,3 +1,4 @@
+#pseudo label 
 import pandas as pd
 import random
 import os
@@ -41,7 +42,7 @@ def split_train(train_df, train_label_df):
 split_train(test_df, pse_label_df)
 
 
-# 伪标签和原训练集拼接
+# combine pseudo and train
 import pandas as pd
 import os
 def pse_merge_train(train_id, pse_id):
