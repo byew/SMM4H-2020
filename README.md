@@ -11,7 +11,7 @@ run model
 
 pseudo label  
 6:cd comnine  
-7:copy result1-6  to  ./data_8223   
+7:copy result1-6  to  ./data_wei   
 8:cd src and python vote001.py  
 
 9:cd ../data   
