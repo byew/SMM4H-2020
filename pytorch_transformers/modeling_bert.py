@@ -1084,7 +1084,7 @@ class BertForSequenceClassification_last2_p(BertPreTrainedModel):
 
     def __init__(self, config):
         super(BertForSequenceClassification_last2_p, self).__init__(config)
-        # czx
+
         lstm_hidden_size_changed = config.lstm_hidden_size * 3
         hidden_size_changed = config.hidden_size * 3
         self.num_labels = config.num_labels
@@ -1180,7 +1180,6 @@ class BertForSequenceClassification_last3_p(BertPreTrainedModel):
 
     def __init__(self, config):
         super(BertForSequenceClassification_last3_p, self).__init__(config)
-        # czx
         # lstm_hidden_size_changed = config.lstm_hidden_size * 3
         hidden_size_changed = config.hidden_size * 4
         self.num_labels = config.num_labels
@@ -1276,7 +1275,7 @@ class BertForSequenceClassification_last3(BertPreTrainedModel):
 
     def __init__(self, config):
         super(BertForSequenceClassification_last3, self).__init__(config)
-        # czx
+
         lstm_hidden_size_changed = config.lstm_hidden_size * 3
         hidden_size_changed = config.hidden_size * 3
         self.num_labels = config.num_labels
