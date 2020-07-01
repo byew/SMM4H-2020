@@ -11,7 +11,7 @@ test_df.head(3)
 
 def split_train(train_df, train_label_df):
     random.seed(42)
-    split_num = 12
+    split_num = 10
     train_df = train_df.merge(train_label_df, on='id', how='left')
     train_df['label'] = train_df['label'].fillna(-1)
     train_df = train_df[train_df['label'] != -1]
