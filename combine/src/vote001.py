@@ -1,4 +1,4 @@
-########pseudo label
+########hard vote result1-6
 
 import pandas as pd
 import numpy as np
