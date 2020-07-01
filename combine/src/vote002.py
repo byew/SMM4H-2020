@@ -1,4 +1,4 @@
-##########33czx_001_投票融合
+##########hard vote to result 1-9
 
 import pandas as pd
 import numpy as np
