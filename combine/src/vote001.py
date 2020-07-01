@@ -1,4 +1,4 @@
-########33czx_001_投票融合4伪标签
+########pseudo label
 
 import pandas as pd
 import numpy as np
