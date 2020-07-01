@@ -1,7 +1,7 @@
 import pandas as pd
 import random
 import os
-pse_label_df = pd.read_csv('../combine/submit/sub_8223用于伪标签.csv')
+pse_label_df = pd.read_csv('../combine/submit/sub_wei.csv')
 pse_label_df.head()
 
 test_df = pd.read_csv('test.csv')
