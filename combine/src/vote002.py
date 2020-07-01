@@ -53,8 +53,3 @@ def diff_df(fname1, fname2):
     return df_diff
 
 
-# fname1 = SUMMIT_DIR + 'sub_vote12_1115_001_8233.csv'
-# fname1 = SUMMIT_DIR + 'result.csv'
-#
-# fname2 = SUMMIT_DIR + 'sub_复现8233.csv'
-# diff_df(fname1, fname2)
