@@ -32,7 +32,7 @@ label_voted = [work(line) for line in tmp_arr]
 df_summit = df_merged[['id']]
 df_summit['label'] = label_voted
 SUMMIT_DIR = '../submit/'
-df_summit[['id','label']].to_csv(SUMMIT_DIR + 'sub_8223用于伪标签.csv',index=False)
+df_summit[['id','label']].to_csv(SUMMIT_DIR + 'sub_wei.csv',index=False)
 print(df_summit.shape)
 
 
