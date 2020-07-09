@@ -143,8 +143,8 @@ def convert_examples_to_features(examples, tokenizer, max_seq_length, split_num,
                 context_tokens_choice = context_tokens[-int(i * skip_len):-1]
             _truncate_seq_pair(context_tokens_choice, ending_tokens, max_seq_length - 3, i == index_end)
 
-            tokens = ["[CLS]"] + ending_tokens + ["[SEP]"] + context_tokens_choice + ["[SEP]"]
-            segment_ids = [0] * (len(ending_tokens) + 2) + [1] * (len(context_tokens_choice) + 1)
+            tokens = ["[CLS]"] + context_tokens_choice + ["[SEP]"] + ending_tokens + ["[SEP]"]
+            segment_ids = [0] * (len(context_tokens_choice) + 2) + [1] * (len(ending_tokens) + 1)
             input_ids = tokenizer.convert_tokens_to_ids(tokens)
             input_mask = [1] * len(input_ids)
 
