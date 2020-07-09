@@ -99,7 +99,7 @@ def read_examples(input_file, is_training):
     df=pd.read_csv(input_file)
     examples=[]
     for val in df[['id','sent0','label']].values:
-        examples.append(InputExample(guid=val[0],text_a=val[1],text_b=' ',label=val[2]))
+        examples.append(InputExample(guid=val[0],text_a=val[1],text_b=None,label=val[2]))
     return examples
 
 
