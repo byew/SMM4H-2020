@@ -974,7 +974,7 @@ class BertForSequenceClassification_gru(BertPreTrainedModel):
         loss, logits = outputs[:2]
     """
     def __init__(self, config):
-        super(BertForSequenceClassification, self).__init__(config)
+        super(BertForSequenceClassification_gru, self).__init__(config)
         self.num_labels = config.num_labels
 
         self.bert = BertModel(config)
